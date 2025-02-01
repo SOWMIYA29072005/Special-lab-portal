@@ -1,0 +1,117 @@
+.enroll-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #FDECE2;
+    border-radius: 20px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.leave-duration {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF7F50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.validation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.validation-status {
+    font-weight: bold;
+    color: #6A5ACD;
+}
+
+.register-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ff7f7fab;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .enroll-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        margin-top: 20px;
+    }
+}

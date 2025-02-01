@@ -1,0 +1,49 @@
+<div class="portfolio-container">
+  <div class="header-section">
+      <div class="profile-info">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&s" alt="Profile Picture" class="profile-pic" />
+          <div>
+              <h1>{{ student.name }}</h1>
+              <p>{{ student.year }} year</p>
+          </div>
+      </div>
+      <div class="summary-card">
+          <h2>Summary</h2>
+          <p>{{ student.summary }}</p>
+      </div>
+  </div>
+
+  <div class="details-section">
+      <div class="card">
+          <h3>Skills</h3>
+          <ul>
+              <li *ngFor="let skill of student.skills">{{ skill }}</li>
+          </ul>
+          <img src="https://img.freepik.com/free-vector/flat-design-innovation-concept_23-2149163765.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid" alt="Skills Image" class="card-image-large">
+      </div>
+      <div class="card">
+          <h3>Achievements</h3>
+          <ul>
+              <li *ngFor="let achievement of student.achievements">{{ achievement }}</li>
+          </ul>
+          <!-- <img src="https://img.freepik.com/premium-vector/goals-achievements-vector-flat-illustration_93208-321.jpg" alt="Achievements Image" class="card-image-large"> -->
+      </div>
+  </div>
+
+  <div class="details-section">
+      <div class="card">
+          <h3>Targets Achieved</h3>
+          <ul>
+              <li *ngFor="let target of student.targetsAchieved">{{ target }}</li>
+          </ul>
+          <!-- <img src="https://st.depositphotos.com/19127720/53377/i/450/depositphotos_533771366-stock-photo-man-perfectly-aimed-arrows-target.jpg" alt="Targets Achieved Image" class="card-image-large"> -->
+      </div>
+      <div class="card cgpa-card">
+          <h3>CGPA</h3>
+          <div class="cgpa-indicator">
+              <div class="cgpa-fill" [style.width.%]="student.cgpa * 10"></div>
+          </div>
+          <p>{{ student.cgpa }}</p>
+      </div>
+  </div>
+</div>

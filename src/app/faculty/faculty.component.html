@@ -1,0 +1,40 @@
+<div class="faculty-dashboard">
+    <h1 class="dashboard-title">Faculty Dashboard</h1>
+  
+    <div class="dashboard-section">
+      <h2>Inactive Students</h2>
+      <ul class="inactive-students">
+        <li *ngFor="let student of inactiveStudents">{{ student.name }}</li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-section">
+      <h2>Scheduled Appointments</h2>
+      <ul class="appointments">
+        <li *ngFor="let appointment of appointments">
+          {{ appointment.date }} - {{ appointment.time }} with {{ appointment.student }}
+        </li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-section">
+      <h2>Proof Approvals</h2>
+      <ul class="proof-approvals">
+        <li *ngFor="let proof of proofs">
+          <span>{{ proof.student }} - {{ proof.description }}</span>
+          <button (click)="approveProof(proof)">Approve</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-section">
+      <h2>Students' Progress</h2>
+      <div *ngFor="let progress of studentsProgress" class="progress-bar">
+        <label>{{ progress.student }}</label>
+        <div class="progress">
+          <div class="progress-fill" [style.width.%]="progress.percentage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

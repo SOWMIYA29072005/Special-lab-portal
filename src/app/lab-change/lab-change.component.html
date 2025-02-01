@@ -1,0 +1,33 @@
+<div class="lab-change-container">
+    <h2>Lab Change Request</h2>
+    <div class="form-container">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" />
+      </div>
+      <div class="form-group">
+        <label for="rollNo">Roll No.</label>
+        <input type="text" id="rollNo" name="rollNo" />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="newLab">New Special Lab</label>
+        <select id="newLab" name="newLab">
+          <option value="dataScience">Data Science Lab</option>
+          <option value="aiLab">AI Lab</option>
+          <option value="iotLab">IoT Lab</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason</label>
+        <input type="text" id="reason" name="reason" />
+      </div>
+      <div class="form-group">
+        <button (click)="bookSlot()" class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  

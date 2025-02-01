@@ -1,0 +1,125 @@
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fdf6f3;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.summary-card {
+  background-color: #ffd6d6;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  width: calc(50% - 10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  color: #555;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  color: #6a5acd;
+  text-align: center;
+  margin: 0;
+}
+
+.card-image {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 100px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 1; /* Full opacity for clear image visibility */
+}
+
+.card-image-large {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%; /* Make image cover 50% of the card width */
+  height: auto;
+  opacity: 1;
+}
+
+.cgpa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cgpa-indicator {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.cgpa-fill {
+  height: 100%;
+  background-color: #dd84d7cb;
+}

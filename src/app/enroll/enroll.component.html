@@ -1,0 +1,53 @@
+<div class="enroll-container">
+    <div class="form-container">
+      <h1>Enroll your Choice</h1>
+      
+      <form [formGroup]="enrollmentForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name">
+        </div>
+  
+        <div class="form-group">
+          <label for="rollNo">Roll No.</label>
+          <input type="text" id="rollNo" placeholder="Enter your roll number">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+  
+        <div class="form-group">
+          <label for="labIncharge">Lab & Lab Incharge (Reviewer)</label>
+          <select id="labIncharge">
+            <option>Data Science Lab -- Lab code -- Faculty</option>
+            <!-- Add other options here -->
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="slots">Slots</label>
+          <select id="slots">
+            <option>02/05/2024 -- 09:00 am -- 2/20 booked</option>
+            <!-- Add other options here -->
+          </select>
+        </div>
+  
+        <button (click)="bookSlot()" type="submit" class="btn">Book Slot</button>
+      </form>
+    </div>
+
+    <div *ngIf="isModalVisible" class="modal">
+      <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <p>Slot's been booked successfully!</p>
+      </div>
+    </div>
+    
+    <div class="profile-picture-container">
+      <h2>Profile Picture</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&s" alt="Profile Picture">
+    </div>
+  </div>
+  

@@ -1,0 +1,65 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <!-- <img src="assets/lab-sphere-logo.png" alt="Lab Sphere Logo" class="logo"> -->
+    <nav>
+      <ul>
+        <li><button (click)="navigateToHome()" class="btn">Home</button></li>
+        <li><button (click)="navigateToEnroll()" class="btn">Enroll</button></li>
+        <li><button (click)="navigateToWildcard()" class="btn">WildCard Entry</button></li>
+        <li><button (click)="navigateToSpecialCase()" class="btn">Special Case Enrollment</button></li>
+        <li><button (click)="navigateToLabChange()" class="btn">Lab Change Request</button></li>
+        <li><button (click)="navigateToPortfolio()" class="btn">Student Portfolio</button></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="top-right-icons">
+        <!-- Notification Dropdown -->
+        <div class="notification-dropdown">
+          <button class="notification-btn" (click)="toggleDropdown('notification')">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/138/small/notification-bell-icon-free-vector.jpg" alt="Notifications">
+          </button>
+          <div class="dropdown-content" [ngClass]="{'show': isNotificationDropdownOpen}">
+            <a href="#">Slots opened for Registration!</a>
+            <a href="#">Check your allotted slot!</a>
+          </div>
+        </div>
+        <!-- Profile Dropdown -->
+        <div class="user-profile">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&s" alt="User Profile" class="profile-icon" (click)="toggleDropdown('profile')">
+          <div class="dropdown-content" [ngClass]="{'show': isProfileDropdownOpen}">
+            <a href="#" (click)="signOut()">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="special-lab-clusters">
+      <h2>Special Lab Clusters</h2>
+      <div class="cluster-buttons">
+        <button class="cluster-btn">IT / Non-IT</button>
+      </div>
+      <div class="lab-details">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240421/pngtree-school-computer-lab-technology-background-image-image_15717582.jpg" alt="Lab Image">
+        <ul>
+          <li>Special Lab name & Code</li>
+          <li>Faculty details (Interns included)</li>
+          <li>Total Student Count</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="promo-video">
+      <h3>Promo video for the intro of Special labs</h3>
+      <img src="https://contentbeta.gumlet.io/wp-content/uploads/2024/05/Examples-of-Promo-Videos-That-Boost-Your-Marketing-1024x538.webp?compress=true&quality=80&w=800&dpr=2.6" alt="Promo Video">
+    </section>
+
+    <section class="achievements">
+      <h3>Achievements by the students & faculties of the lab</h3>
+      <img src="https://img.freepik.com/premium-vector/goals-achievements-vector-flat-illustration_93208-321.jpg" alt="Achievements">
+    </section>
+  </main>
+</div>

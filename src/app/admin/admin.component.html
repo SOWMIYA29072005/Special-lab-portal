@@ -1,0 +1,29 @@
+<div class="admin-dashboard">
+    <h1 class="dashboard-title">Admin Dashboard</h1>
+  
+    <div class="dashboard-section">
+      <h2>Inactive Students (Compulsory Attendance Required)</h2>
+      <ul class="inactive-students">
+        <li *ngFor="let student of inactiveStudents">{{ student.name }}</li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-section">
+      <h2>Vacant Seats in Labs</h2>
+      <ul class="vacant-seats">
+        <li *ngFor="let lab of labs">
+          {{ lab.name }}: {{ lab.vacantSeats }} vacant seats
+        </li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-section">
+      <h2>Ongoing Interview Process</h2>
+      <ul class="interview-info">
+        <li *ngFor="let interview of interviews">
+          {{ interview.company }} - {{ interview.status }} on {{ interview.date }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

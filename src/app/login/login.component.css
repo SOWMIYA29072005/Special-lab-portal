@@ -1,0 +1,123 @@
+/* General page background */
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 195px;
+  background-color: #f1c09f;
+}
+
+/* Card for login form */
+.login-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: left;
+}
+
+/* Header styles */
+.login-header .title {
+  font-family: 'Cursive';
+  font-size: 36px;
+  color: #000;
+}
+
+.login-header .subtitle {
+  font-size: 16px;
+  color: #ff9d32;
+  margin-bottom: 15px;
+}
+
+/* Google login button */
+.google-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffcf8b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Form styles */
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.sign-in-btn,
+.faculty-sign-in-btn,
+.admin-sign-in-btn {
+  background-color: #ff9d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button-group .sign-in-btn, 
+.button-group .faculty-sign-in-btn {
+  width: 48%;
+}
+
+.admin-sign-in-btn {
+  width: 48%;
+}
+
+/* Right section with info and logo */
+.login-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.login-info .logo {
+  width: 150px;
+  margin-bottom: 0.25px;
+}
+
+.login-info h2 {
+  font-size: 20px;
+  color: #662d91;
+  margin-bottom: 10px;
+}
+
+.login-info p {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 0;
+}

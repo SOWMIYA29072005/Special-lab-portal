@@ -1,0 +1,59 @@
+<div class="enroll-container">
+    <div class="form-container">
+      <h1>Special Case Enrollment</h1>
+  
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="student.name" />
+      </div>
+  
+      <div class="form-group">
+        <label for="roll-no">Roll No.</label>
+        <input type="text" id="roll-no" [(ngModel)]="student.rollNo" />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="student.email" />
+      </div>
+  
+      <div class="date-container">
+        <div class="form-group">
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" [(ngModel)]="student.startDate" />
+        </div>
+  
+        <span class="arrow">&#10140;</span>
+  
+        <div class="form-group">
+          <label for="end-date">End Date</label>
+          <input type="date" id="end-date" [(ngModel)]="student.endDate" />
+        </div>
+  
+        <div class="leave-duration">
+          <label>Leave Duration:</label>
+          <span>{{ leaveDuration }} days</span>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="lab">Opt a Special Lab of your choice:</label>
+        <select id="lab" [(ngModel)]="student.selectedLab">
+          <option *ngFor="let lab of labs" [value]="lab">
+            {{ lab.name }} -- {{ lab.code }} -- {{ lab.faculty }}
+          </option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="right-container">
+      <button class="btn" (click)="submitProof()">Submit Proof</button>
+      <div class="validation">
+        <span>Validation by Mentor</span>
+        <span class="validation-status">{{ validationStatus }}</span>
+      </div>
+    </div>
+  </div>
+  
+  <button (click)="bookSlot()" class="register-btn" (click)="register()">Register</button>
+  

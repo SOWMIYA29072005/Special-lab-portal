@@ -1,0 +1,36 @@
+<div class="enroll-container">
+    <h1>Enroll for Wildcard Round</h1>
+    
+    <form>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="rollNo">Roll No</label>
+        <input type="text" id="rollNo" name="rollNo" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="availableLabs">Available Vacant Labs</label>
+        <select id="availableLabs" name="availableLabs">
+          <option>Data Science Lab -- Lab code -- 2 vacant seats</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+  
+      <!-- <div class="profile-pic-container">
+        <label for="profilePic">Profile Picture</label>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&s" alt="Profile Picture">
+      </div> -->
+  
+      <button (click)="bookSlot()" type="submit" class="register-button">Register</button>
+    </form>
+  </div>
+  

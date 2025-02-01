@@ -1,0 +1,38 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-header">
+      <h1 class="title">Lab Sphere</h1>
+      <p class="subtitle">Authorizing...</p>
+      <button class="google-login-btn">
+        <!-- <img src="assets/logo.png" alt="Google Logo" class="google-icon"> -->
+        Use BitSathy Account
+      </button>
+    </div>
+
+    <div class="login-form-block">
+      <form (ngSubmit)="onSubmit()" class="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" [(ngModel)]="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="sign-in-btn">Sign in</button>
+          <button type="button" (click)="onFacultySignIn()" class="faculty-sign-in-btn">Faculty Sign in</button>
+        </div>
+        <button type="button" (click)="onAdminSignIn()" class="admin-sign-in-btn">Admin Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="login-info">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYB-39YIn8M7nenZPpLqrS485KtB_nMVAvgA&s" alt="Lab Sphere Logo" class="logo">
+    <h2>Bannari Amman Institute of Technology</h2>
+    <p>Engineering the Future Together!<br>Step into Lab Sphere!!</p>
+  </div>
+</div>
